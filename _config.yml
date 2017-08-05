@@ -1,0 +1,116 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+title: 王志平的程序人生
+subtitle: 和老王聊聊技术人生那点事儿-Thinking In Tech-life!
+description: 王志平，终身学习者，Gavin.Wang's blog.
+keywords: 技术博客, Embeded Linux, linux驱动, linux内核,Python,ARM
+author: 王志平(Gavin.Wang)
+language: zh-CN
+timezone:
+
+# URL
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+url: https://wpneu.github.io
+root: /
+permalink: :year/:month/:day/:title.html
+permalink_defaults:
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+# Writing
+new_post_name: :title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link: true # Open external links in new tab
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: false
+  tab_replace:
+
+# Category & Tag
+default_category: uncategorized
+category_map:
+tag_map:
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+
+# Pagination
+## Set per_page to 0 to disable pagination
+pagination_dir: page
+index_generator:
+  per_page: 8
+archive_generator:
+  per_page: 0
+  yearly: true
+  monthly: true
+tag_generator:
+  per_page: 0
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: BlueLake
+stylus:
+  compress: true
+
+
+# json local search
+jsonContent:
+  meta: false
+  pages: false
+  posts:
+    title: true
+    date: true
+    path: true
+    text: true
+    raw: false
+    content: false
+    slug: false
+    updated: false
+    comments: false
+    link: false
+    permalink: false
+    excerpt: false
+    categories: false
+    tags: true
+
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html
+
+#deploy:
+#- type: git
+#  repository: https://git.oschina.net/chaoo/chaoo.git
+#  branch: master
+
+reward_comment: 坚持原创技术分享，您的支持将鼓励我继续创作！
+wechatpay: http://a2.qpic.cn/psb?/V14TB3jo3PjVye/N27kzLCmsTt6jM.7FIzR5yWDWJbJlm.vm5wFyE3DP6M!/b/dD8BAAAAAAAA&bo=gAJuAwAAAAADB80!&rf=viewer_4
+
+
+deploy:
+  type: git
+  repo: 
+    github: git@github.com:wpneu/wpneu.github.io.git,master
+    coding: git@git.coding.net:wpneu/wpneu.git,master
+    oschina: git@git.oschina.net:wpneu/wpneu.git,master 
